@@ -111,3 +111,10 @@ body {
         height: 120px; /* Alterei aqui */
     }
 }
+
+@media (max-width: 768px) {
+    #fotoDestaque {
+        max-width: 100%;
+        height: auto;
+    }
+}
