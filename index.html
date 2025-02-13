@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossas Memórias Juntos 💖</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="height: 75px;"></div>
+    <div class="container">
+        <header>
+            <h1 class="titulo">Ela disse SIM! 💍😍</h1>
+            <p class="mensagem">Obrigado por ter falado sim! 💕 Com o sim, você confirmou o meu maior sonho e me deu a oportunidade de compartilhar essa linda experiência com você. 😊 Agora, juntos, vamos explorar este novo capítulo da nossa vida, cheio de aventuras, sorrisos e momentos inesquecíveis. 🌟 Obrigado por confiar em mim e por nos unirmos neste caminho de amor. ❤️ Vamos viver este momento com todo o carinho e felicidade. 😘</p>
+        </header>
+        <button id="botaoMusica" aria-label="Reproduzir música">🎵 Tocar Música</button>
+        <p>Aperte na primeira foto pequena S2</p>
+
+        <section class="galeria">
+            <div class="foto destaque">
+                <img src="foto1.jpg" alt="Nosso momento especial" id="fotoDestaque">
+            </div>
+            <div class="miniaturas">
+                <img src="foto2.jpg" onclick="mudarFoto('foto2.jpg')" alt="Foto 2" class="miniatura" aria-label="Ver foto 2">
+                <img src="foto3.jpg" onclick="mudarFoto('foto3.jpg')" alt="Foto 3" class="miniatura" aria-label="Ver foto 3">
+                <img src="foto4.jpg" onclick="mudarFoto('foto4.jpg')" alt="Foto 4" class="miniatura" aria-label="Ver foto 4">
+                <img src="foto5.jpg" onclick="mudarFoto('foto5.jpg')" alt="Foto 5" class="miniatura" aria-label="Ver foto 5">
+                <img src="foto6.jpeg" onclick="mudarFoto('foto6.jpeg')" alt="Foto 6" class="miniatura" aria-label="Ver foto 6">
+                <img src="foto7.jpg" onclick="mudarFoto('foto7.jpg')" alt="Foto 7" class="miniatura" aria-label="Ver foto 7">
+                <img src="foto9.jpg" onclick="mudarFoto('foto9.jpg')" alt="Foto 9" class="miniatura" aria-label="Ver foto 9">
+                <img src="foto10.jpg" onclick="mudarFoto('foto10.jpg')" alt="Foto 10" class="miniatura" aria-label="Ver foto 10">
+            </div>
+        </section>
+
+        <footer>
+            <p class="assinatura">Com amor, do seu atual namorado apaixonado! 💕</p>
+        </footer>
+    </div>
+
+    <audio id="musica">
+        <source src="musica.mp3" type="audio/mpeg">
+        Seu navegador não suporta áudio.
+    </audio>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

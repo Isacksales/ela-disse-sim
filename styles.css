@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    color: #2c3e50;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+    color: #e91e63;
+    animation: piscar 2s infinite alternate;
+}
+
+.mensagem {
+    font-size: 1.3em;
+    color: #555;
+    margin-top: 10px;
+}
+
+.galeria {
+    margin-top: 20px;
+}
+
+.foto img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    max-width: 600px;
+  max-height: 400px;
+  }
+
+.foto img:hover {
+    transform: scale(1.05);
+}
+
+.miniaturas img {
+    width: 150px; /* Alterei aqui */
+    height: 150px; /* Alterei aqui */
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.miniaturas img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.miniaturas img.ativa {
+    border: 3px solid #e91e63;
+    box-shadow: 0 0 15px rgba(233, 30, 99, 0.7);
+}
+
+.assinatura {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #e91e63;
+}
+
+#botaoMusica {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#botaoMusica:hover {
+    background-color: #c2185b;
+}
+
+@keyframes piscar {
+    0% { opacity: 1; }
+    50% { opacity: 0.6; }
+    100% { opacity: 1; }
+}
+
+/* Responsivo */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .titulo {
+        font-size: 2em;
+    }
+
+    .miniaturas img {
+        width: 120px; /* Alterei aqui */
+        height: 120px; /* Alterei aqui */
+    }
+}
