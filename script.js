@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (indice >= fotos.length) {
                 indice = 0;
             }
-            setTimeout(slideshow, 7000);
+            setTimeout(slideshow, 5000);
         }
     }
 
